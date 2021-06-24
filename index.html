@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yogeshwar | RPS Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <h1 class="page-heading">
+                Welcome to Yogeshwar's [ Rock | Paper | Scissor ] Game.
+            </h1>
+        </nav>
+    </header>
+    <main>
+        <div class="game-heading">
+            <h2 class="game-heading-points ">-----Your Points bar-----</h2>
+        </div>
+        <div class="points-container">
+            <h3 class="points" id="your-points">0</h3>
+        </div>
+        <div class="main-container">
+            <div class="player cm">
+                <div class="you nm">
+                    You
+                </div>
+                <div class="options-player bax">
+                    <div class="option-rock al" id="c"><img src="./rock.png" alt="Stone" srcset=""
+                            class="rock-img img-options" id="image-rock"></div>
+                    <div class="option-paper al"><img src="./paper.png" alt="Paper" srcset=""
+                            class="rock-img img-options" id="image-paper"></div>
+                    <div class="option-scissor al"><img src="./scissor.png" alt="Scissor" srcset=""
+                            class="rock-img img-options" id="image-scissor"></div>
+                </div>
+            </div>
+            <div class="seperator">
+                VS
+            </div>
+            <div class="opponent cm">
+                <div class="enemy nm">
+                    Computer
+                </div>
+                <div class="options-opponent bax">
+                    <div class="opponent-choice" id="computer">
+                        <div class="row examples">
+                            <div class="col-3">
+                                <div class="snippet" data-title=".dot-elastic">
+                                    <div class="stage">
+                                        <div class="dot-elastic"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </main>
+</body>
+<script src="logic.js"></script>
+
+</html>
