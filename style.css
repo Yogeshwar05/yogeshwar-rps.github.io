@@ -19,6 +19,7 @@ body {
 }
 .page-heading {
   margin: 15px;
+  text-align: center;
 }
 
 .game-heading {
@@ -354,4 +355,13 @@ body {
   font-size: 30px;
   padding: 10px;
   text-align: center;
+}
+.al {
+  transition: all 0.75s;
+}
+.al:hover {
+  transform: scale(1.15);
+}
+.al:active {
+  border: 2px solid darkgreen;
 }
