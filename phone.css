@@ -1,7 +1,7 @@
 @media (max-width: 900px) {
   .main-container {
     flex-direction: column;
-    width: 330px;
+    width: 320px;
     height: 870px;
   }
   .seperator {
