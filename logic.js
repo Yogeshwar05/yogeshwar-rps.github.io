@@ -55,6 +55,24 @@ function pointUpdater() {
     }, 1000);
 }
 
+//function for data updater
+let line = document.getElementById(`dataPoints`)
+function win() {
+    setTimeout(() => {
+        line.innerHTML = `<p>You won against computer!</p> <p>( +20 ) Points for you. Try again</p>`
+    }, 1000);
+}
+function loose() {
+    setTimeout(() => {
+        line.innerHTML = `<p>Computer won against you.</p><p>( -5 ) points for you.</p><p>Better luck next time. Try again</p>`
+    }, 1000);
+}
+function tie() {
+    setTimeout(() => {
+        line.innerHTML = `<p>Oh no one won there is a tie.</p> <p>( 0 ) points for you.</p> <p>Better luck next time. Try again</p>`
+    }, 1000);
+}
+
 //--------------------------
 // 1 is rock
 // 2 is paper
@@ -71,6 +89,7 @@ rock.addEventListener(`click`, () => {
         a = a + 0
         console.log(a);
         pointUpdater()
+        tie()
     }
     else if (numberRandom == 2) {
         loading()
@@ -78,6 +97,7 @@ rock.addEventListener(`click`, () => {
         a = a - 5
         console.log(a);
         pointUpdater()
+        loose9
     }
     else if (numberRandom == 3) {
         loading()
@@ -85,6 +105,7 @@ rock.addEventListener(`click`, () => {
         a = a + 20
         console.log(a);
         pointUpdater()
+        win()
     }
 })
 
@@ -96,18 +117,21 @@ paper.addEventListener(`click`, () => {
         rockFunction()
         a = a + 20
         pointUpdater()
+        win()
     }
     else if (numberRandom == 2) {
         loading()
         paperFunction()
         a = a + 0
         pointUpdater()
+        tie()
     }
     else if (numberRandom == 3) {
         loading()
-        paperFunction()
+        scissorFunction()
         a = a - 5
         pointUpdater()
+        loose()
     }
 
 })
@@ -120,17 +144,20 @@ scissor.addEventListener(`click`, () => {
         rockFunction()
         a = a - 5
         pointUpdater()
+        loose()
     }
     else if (numberRandom == 2) {
         loading()
         paperFunction()
         a = a + 20
         pointUpdater()
+        win()
     }
     else if (numberRandom == 3) {
         loading()
         scissorFunction()
         a = a + 0
         pointUpdater()
+        tie()
     }
 })

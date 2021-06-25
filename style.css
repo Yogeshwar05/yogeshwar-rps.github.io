@@ -5,12 +5,18 @@
 }
 
 .navbar {
-  background-color: blue;
+  background-color: rgb(0, 132, 255);
+  border: 5px solid rgba(0, 0, 255, 0.336);
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 20px;
+  font-family: "Ubuntu", sans-serif;
+  color: rgb(232, 255, 203);
 }
-
+body {
+  background-color: rgba(0, 255, 136, 0.212);
+}
 .page-heading {
   margin: 15px;
 }
@@ -21,10 +27,13 @@
   justify-content: center;
 }
 .game-heading-points {
-  background-color: red;
+  background-color: rgb(0, 132, 255);
+  border: 5px solid rgba(0, 0, 255, 0.336);
   padding: 5px 15px;
   margin-top: 5px;
   margin-bottom: 5px;
+  border-radius: 20px;
+  color: rgb(232, 255, 203);
 }
 .points-container {
   display: flex;
@@ -34,19 +43,25 @@
 .points {
   font-size: 5rem;
   padding: 10px 38px;
-  background-color: gray;
+  background-color: rgb(0, 132, 255);
+  border: 5px solid rgba(0, 0, 255, 0.336);
+  color: rgb(255, 222, 160);
   border-radius: 100px;
+  margin-bottom: 10px;
 }
 .main-container {
   display: flex;
   align-content: space-around;
   align-items: flex-start;
   justify-content: center;
-  border: 3px solid brown;
+  border: 5px solid rgba(0, 0, 255, 0.582);
+  background-color: rgb(192, 225, 255);
   height: 400px;
   width: 900px;
+  /* margin-top: 20px; */
   margin: auto;
   flex-wrap: wrap;
+  border-radius: 30px;
 }
 .your-container {
   align-self: flex-start;
@@ -56,6 +71,7 @@
   display: flex;
   justify-content: center;
 }
+
 .player {
   display: flex;
   /* justify-content: center; */
@@ -66,6 +82,10 @@
 }
 .seperator {
   margin: auto 75px;
+  font-size: 30px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 50px;
+  color: red;
 }
 .opponent {
   display: flex;
@@ -79,8 +99,14 @@
   height: 50px;
   width: 200px;
   font-size: 40px;
-  padding: 2px;
+  padding: 1px;
   text-align: center;
+  border: 2px solid rgba(0, 0, 255, 0.582);
+  background-color: rgb(164, 211, 255);
+  color: rgb(143, 0, 131);
+  margin: 2px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  border-radius: 10px;
 }
 .cm {
   flex-direction: column;
@@ -93,7 +119,9 @@
 .bax {
   width: 300px;
   height: 323px;
-  border: 2px solid rgb(0, 147, 233);
+  background-color: rgb(135, 197, 255);
+  border: 2px solid blue;
+  border-radius: 20px;
   padding: 10px;
   display: flex;
   flex-direction: column;
@@ -105,12 +133,23 @@
   width: 140px;
   border: 2px solid blue;
   margin: 5px;
+  background-color: #f7f7f7;
+  border-radius: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .opponent-choice {
   height: 90px;
   width: 140px;
   border: 2px solid blue;
   margin: 5px;
+  display: flex;
+  border-radius: 13px;
+
+  align-items: center;
+  justify-content: center;
+  background-color: #f7f7f7;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -299,4 +338,20 @@
 .transformed {
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
+}
+.notification-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid green;
+  background-color: rgb(161, 255, 161);
+  border-radius: 20px;
+  margin: 10px;
+  color: crimson;
+  font-family: cursive;
+}
+.point-data {
+  font-size: 30px;
+  padding: 10px;
+  text-align: center;
 }
