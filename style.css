@@ -63,7 +63,7 @@ body {
   margin: auto;
   /* flex-wrap: wrap; */
   border-radius: 30px;
-  flex-direction: column;
+  flex-direction: row;
 }
 .your-container {
   align-self: flex-start;
