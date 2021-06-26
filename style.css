@@ -42,7 +42,7 @@ body {
   justify-content: center;
 }
 .points {
-  font-size: 5rem;
+  font-size: 80px;
   padding: 10px 38px;
   background-color: rgb(0, 132, 255);
   border: 5px solid rgba(0, 0, 255, 0.336);

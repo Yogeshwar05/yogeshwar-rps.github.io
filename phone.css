@@ -1,8 +1,8 @@
 @media (max-width: 1080px) {
   .main-container {
-    flex-direction: column;
-    width: 320px;
-    height: 870px;
+    flex-direction: row;
+    width: 350px;
+    height: 1080px;
   }
   .seperator {
     margin: 5px auto;
